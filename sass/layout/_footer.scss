@@ -1,0 +1,25 @@
+.footer {
+  background-color: $color-1;
+  margin-top: 100px;
+
+  &__grid {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  &__grid-item {
+    // background-color: crimson;
+    height: 200px;
+    flex: 1;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &--subscribe {
+      padding-right: 50px;
+    }
+  }
+}

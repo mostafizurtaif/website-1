@@ -1,0 +1,167 @@
+.section {
+  max-width: 960px;
+  margin: 0 auto;
+
+  &__grid {
+    display: flex;
+  }
+
+  &--about {
+    &__col {
+      padding: 20px;
+      flex: 1;
+
+      &:nth-of-type(1) {
+        flex: 2;
+      }
+    }
+  }
+
+  &--contact {
+    // background-color: aquamarine;
+    // height: 500px;
+
+    &__grid {
+      background-image: linear-gradient(
+          to right,
+          rgba(#000, 0.4),
+          rgba(#000, 0.4)
+        ),
+        url("../../img/form-bg.jpg");
+      background-position: center;
+      background-size: cover;
+      padding: 60px;
+      display: flex;
+    }
+
+    &__form,
+    &__address {
+      width: 50%;
+    }
+
+    &__address {
+      padding-left: 50px;
+      font-style: normal;
+      color: $color-3;
+
+      a {
+        color: $color-4;
+      }
+    }
+  }
+}
+
+.review-box {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid rgba(#000, 0.2);
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__photo-container {
+    margin-right: 10px;
+  }
+
+  &__photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    clip-path: circle();
+  }
+}
+
+.contact-form {
+  &__name,
+  &__email,
+  &__msg {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 8px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__msg {
+    height: 150px;
+    resize: none;
+  }
+
+  &__send {
+    background-color: $color-1;
+    color: $color-3;
+    font-family: inherit;
+    font-size: 18px;
+    border: none;
+    padding: 10px 30px;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: $color-4;
+      color: $color-1;
+    }
+  }
+}
+
+.nav-links {
+  list-style: none;
+
+  &__item {
+    padding: 5px 0;
+  }
+
+  &__heading {
+    font-size: 18px;
+    color: $color-4;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $color-3;
+  }
+}
+
+.subscribe {
+  &__heading {
+    font-size: 20px;
+    color: $color-4;
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+
+  &__email {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  &__btn {
+    background-color: $color-4;
+    color: $color-1;
+    font-family: inherit;
+    font-size: 18px;
+    border: none;
+    padding: 10px 30px;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: $color-2;
+      color: $color-3;
+    }
+  }
+}

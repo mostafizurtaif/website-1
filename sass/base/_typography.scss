@@ -1,0 +1,19 @@
+body {
+  font-family: "Neucha", cursive;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-weight: normal;
+  text-align: center;
+}
+
+.heading-primary {
+  font-size: 45px;
+  color: $color-1;
+}
+
+.heading-secondary {
+  font-size: 25px;
+  color: $color-2;
+}

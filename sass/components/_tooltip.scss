@@ -1,0 +1,49 @@
+$size: 8px;
+
+.tooltip {
+  position: absolute;
+
+  // to be configured in other file.
+  // top: 100%;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: $size * -2;
+    border-width: $size;
+    border-style: solid;
+    z-index: -1000;
+
+    // to be configured in other file.
+    // border-color: transparent transparent #555 transparent;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+    // to be configured in other file.
+    // top: -12px;
+    // height: 12px;
+  }
+
+  &--left {
+    left: 0;
+
+    &::before {
+      left: $size * 2;
+    }
+  }
+
+  &--right {
+    right: 0;
+
+    &::before {
+      right: $size * 2;
+    }
+  }
+}
